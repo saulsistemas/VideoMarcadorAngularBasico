@@ -11,3 +11,8 @@
         <img [src]="equipoVisitante.logo" alt="">
     </div>
 </div>
+<div class="equipos">
+    <!-- PASANDO INFORMACION A HIJO -->
+    <app-equipo class="equipo" [hijoEquipo]="equipoLocal"></app-equipo>
+    <app-equipo class="equipo" [hijoEquipo]="equipoVisitante"></app-equipo>
+</div>
