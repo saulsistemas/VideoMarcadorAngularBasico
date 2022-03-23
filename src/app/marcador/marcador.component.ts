@@ -39,7 +39,7 @@ export class MarcadorComponent implements OnInit {
   }
   getCanastaLocal($event:any){
     this.puntosLocales +=$event.puntos;
-    this.equipoLocal.jugadores.array.forEach((element:any) => {
+    this.equipoLocal.jugadores.forEach((element:any) => {
       if (element.nombre === $event.nombreJugador) {
         element.puntos +=$event.puntos
       } 
@@ -47,7 +47,7 @@ export class MarcadorComponent implements OnInit {
   }
   getCanastaVisitante($event:any){
     this.puntosVisintantes +=$event.puntos;
-    this.equipoVisitante.jugadores.array.forEach((element:any) => {
+    this.equipoVisitante.jugadores.forEach((element:any) => {
       if (element.nombre === $event.nombreJugador) {
         element.puntos +=$event.puntos
       } 

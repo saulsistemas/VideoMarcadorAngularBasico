@@ -13,6 +13,12 @@
 </div>
 <div class="equipos">
     <!-- PASANDO INFORMACION A HIJO -->
-    <app-equipo class="equipo" [hijoEquipo]="equipoLocal"       (hijoCanasta)="getCanastaLocal($event)" ></app-equipo>
-    <app-equipo class="equipo" [hijoEquipo]="equipoVisitante"   (hijoCanasta)="getCanastaVisitante($event)"></app-equipo>
+    <app-equipo class="equipo" 
+                        [hijoEquipo]="equipoLocal"       
+                        (hijoCanasta)="getCanastaLocal($event)" ></app-equipo>
+    <app-equipo class="equipo" 
+                        [hijoEquipo]="equipoVisitante"   
+                        (hijoCanasta)="getCanastaVisitante($event)"></app-equipo>
 </div>
+<app-top-score  [hijoEquipoLocal]="equipoLocal"
+                [hijoVisitante]="equipoVisitante"></app-top-score>
